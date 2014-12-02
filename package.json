@@ -1,0 +1,21 @@
+{
+  "name": "Typomatic2",
+  "version": "1.0.0",
+  "description": "Typomatic2 - a toolkit for managing typography on the web",
+  "main": "gupfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrej Mlinarević",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-livereload": "^2.1.1",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.2.0",
+    "gulp-util": "^3.0.1"
+  }
+}

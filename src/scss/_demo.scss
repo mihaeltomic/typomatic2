@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    # Demo styles
+\*------------------------------------*/
+
+body {
+	max-width: rem-calc(1280);
+	margin: 0 auto;
+}
+.plac {
+	@include type-scale(small);
+	@include breakpoint(200px) {
+		@include type-scale(small, false, 7);
+	}
+	@include margin-trailer(1);
+	@include margin-leader(1);
+	@include padding-trailer(1);
+	@include padding-leader(1);
+}

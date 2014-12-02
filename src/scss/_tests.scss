@@ -1,0 +1,100 @@
+/*------------------------------------*\
+    # Tests
+\*------------------------------------*/
+
+// Wrong input
+.wronginput {
+}
+
+// Base (no argument)
+.test-no-size-argument {
+    @include type-scale;
+}
+.test-no-size-argument2 {
+    @include type-scale;
+}
+
+// Tiny font size
+.test-tiny {
+    @include type-scale(tiny);
+}
+.test-tiny2 {
+    @include type-scale(tiny);
+}
+
+// Small font size
+.test-small {
+    @include type-scale(small);
+}
+.test-small2 {
+    @include type-scale(small);
+}
+
+// Base font size
+.test-base {
+    @include type-scale(base);
+}
+.test-base2 {
+    @include type-scale(base);
+}
+
+// Medium font size
+.test-medium {
+    @include type-scale(medium);
+}
+.test-medium2 {
+    @include type-scale(medium);
+}
+
+// Large font size
+.test-large {
+    @include type-scale(large);
+}
+.test-large2 {
+    @include type-scale(large);
+}
+
+// XLarge font size
+.test-xlarge {
+    @include type-scale(xlarge);
+}
+.test-xlarge2 {
+    @include type-scale(xlarge);
+}
+
+// XXLarge font size
+.test-xxlarge {
+    @include type-scale(xxlarge, true, 10);
+}
+.test-xxlarge2 {
+    @include type-scale(xxlarge);
+}
+.textxxlarge3-custombaselines {
+    @include type-scale(xxlarge, false, 3);
+}
+
+@media screen and (min-width: 320px) {
+    .test-mediaquery {
+        @include type-scale(small, false);
+    }
+    .test-mediaquery2 {
+        @include type-scale(small, false);
+    }
+    .test-mediaquery3-custombaselines {
+        @include type-scale(small, false);
+    }
+}
+
+// Test margins and paddings.
+.margin-trailer {
+    @include margin-trailer(1);
+}
+.margin-leader {
+    @include margin-leader(1);
+}
+.padding-trailer {
+    @include padding-trailer(1);
+}
+.padding-leader {
+    @include padding-leader(1);
+}

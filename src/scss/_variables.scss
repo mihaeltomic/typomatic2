@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    # Variables
+\*------------------------------------*/
+
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$type-output-classes: true; 
+$type-prefix: 'type';
+$type-class-separator: '--';
+$type-units: "rem";
+
+$type-scale: (
+    tiny: (
+        font-size: 12px,
+        base-lines: 0.5
+    ),
+    small: (
+        font-size: 14px,
+        base-lines: 1
+    ),
+    base: (
+        font-size: $base-font-size,
+        base-lines: 1
+    ),
+    medium: (
+        font-size: 25px,
+        base-lines: 1.5
+    ),
+    large: (
+        font-size: 31px,
+        base-lines: 1.5
+    ),
+    xlarge: (
+        font-size: 39px,
+        base-lines: 1.5
+    ),
+    xxlarge: (
+        font-size: 49px,
+        base-lines: 2.5 
+    )
+);
